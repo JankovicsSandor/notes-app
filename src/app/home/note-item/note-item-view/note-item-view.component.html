@@ -1,0 +1,18 @@
+<div>
+  <div class="title">
+    {{actualNote?.title}}
+  </div>
+  <div class="content">
+    {{actualNote?.content}}
+  </div>
+  <div class="actionsBox">
+    <div class="created">
+      Created at: {{actualNote?.createTime| date:'short'}}
+    </div>
+    <div class="actions">
+      <mat-icon class="actionIcon">edit</mat-icon>
+      <mat-icon (click)="sendDeleteItem()" matTooltip="Delete item" class="actionIcon">delete</mat-icon>
+    </div>
+  </div>
+
+</div>

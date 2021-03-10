@@ -1,0 +1,5 @@
+<section class="notes">
+  <div *ngFor="let actual of noteStoreQuery.selectAll()|async" class="noteItem">
+    <note-item-view [actualNote]="actual" (deleteItem)="deleteItemFromList($event)"></note-item-view>
+  </div>
+</section>
